@@ -39,6 +39,11 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# added by Cyndi so that I could use attr_accessible in the models as per the book
+# when I executed the attr_accessible, the runtime error said I should use new recommended protection model for params (strong parameters)
+# or add 'protected_attributes' to my gemfile   This is how the google search said to do that
+gem 'protected_attributes'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
